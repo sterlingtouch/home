@@ -1,0 +1,1 @@
+# Sterling Touch static site
