@@ -834,21 +834,28 @@ h3 {
   border-color: #e36b5c;
 }
 
-.checkbox-row label {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  color: rgba(255, 255, 255, 0.82);
+.checkbox-row {
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  gap: 12px;
+  align-items: start;
+  padding: 14px;
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 16px;
+  background: rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.86);
+  font-size: var(--step--1);
+  font-weight: 700;
   line-height: 1.45;
   cursor: pointer;
 }
 
 .checkbox-row input[type="checkbox"] {
   width: 18px;
-  min-width: 18px;
   height: 18px;
-  min-height: 18px;
-  margin-top: 4px;
+  margin: 2px 0 0;
+  padding: 0;
+  border-radius: 4px;
   accent-color: var(--accent);
   cursor: pointer;
 }
